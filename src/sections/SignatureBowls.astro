@@ -1,0 +1,50 @@
+---
+import Container from '../components/Container.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import BowlCard from '../components/BowlCard.astro';
+import FadeUp from '../components/FadeUp';
+import menuData from '../data/menu.json';
+
+const signatureItems = menuData.categories
+  .flatMap(cat => cat.items)
+  .filter(item => item.signature)
+  .slice(0, 4);
+---
+
+<section class="py-20 lg:py-28 bg-soft-cream">
+  <Container>
+    <FadeUp client:visible>
+      <SectionHeading
+        title="What ends up on the table."
+        subtitle="Small bowls, big personalities. Salads with bite, soups with depth, grilled meats with smoke."
+        align="center"
+      />
+    </FadeUp>
+    <div class="mt-12 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+      {signatureItems.map((item, index) => (
+        <FadeUp client:visible delay={index * 0.1}>
+          <BowlCard
+            name={item.name}
+            englishName={item.englishName}
+            description={item.description}
+            price={item.price}
+            image={item.image}
+            tags={item.tags}
+            signature={item.signature}
+          />
+        </FadeUp>
+      ))}
+    </div>
+    <FadeUp client:visible delay={0.4}>
+      <div class="mt-12 text-center">
+        <a
+          href="/menu"
+          class="inline-flex items-center gap-2 text-thai-chili-red font-medium hover:underline"
+        >
+          View full menu
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </FadeUp>
+  </Container>
+</section>

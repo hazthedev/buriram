@@ -1,0 +1,91 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppFloat from '../components/WhatsAppFloat.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  canonical?: string;
+}
+
+const { title, description, ogImage = '/og-image.svg', canonical } = Astro.props;
+const rawSiteUrl = Astro.site?.toString() || 'https://buriram-restaurant.vercel.app';
+const siteUrl = rawSiteUrl.replace(/\/$/, '');
+const canonicalUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.toString();
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <meta name="generator" content={Astro.generator} />
+
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalUrl} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={`${siteUrl}${ogImage}`} />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content={canonicalUrl} />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />
+
+  <!-- JSON-LD Restaurant Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Buriram Restaurant",
+    "alternateName": "泰国小小碗",
+    "description": "Authentic Thai cuisine served in small Chinese-style bowls. Thai X Chinese fusion in Wangsa Maju, KL.",
+    "url": siteUrl,
+    "telephone": "+60-12-833-1059",
+    "email": "ttktrading0103@gmail.com",
+    "priceRange": "$$",
+    "servesCuisine": ["Thai", "Chinese", "Isan"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kuala Lumpur",
+      "addressRegion": "Wangsa Maju",
+      "addressCountry": "MY"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "11:00",
+        "closes": "22:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.6",
+      "reviewCount": "155"
+    },
+    "sameAs": [
+      "https://instagram.com/buriram_restaurant"
+    ]
+  })} />
+</head>
+<body class="bg-soft-cream text-deep-indigo antialiased">
+  <Navbar />
+  <main>
+    <slot />
+  </main>
+  <Footer />
+  <WhatsAppFloat />
+</body>
+</html>

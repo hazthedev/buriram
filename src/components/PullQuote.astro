@@ -1,0 +1,20 @@
+---
+interface Props {
+  quote: string;
+  attribution?: string;
+  class?: string;
+}
+
+const { quote, attribution, class: className = '' } = Astro.props;
+---
+
+<blockquote class={`max-w-2xl ${className}`}>
+  <p class="font-display text-2xl sm:text-3xl lg:text-4xl italic text-deep-indigo leading-snug">
+    "{quote}"
+  </p>
+  {attribution && (
+    <footer class="mt-4 text-sm text-dusty-slate">
+      — {attribution}
+    </footer>
+  )}
+</blockquote>

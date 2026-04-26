@@ -1,0 +1,55 @@
+---
+import Container from '../components/Container.astro';
+import ContactForm from '../components/ContactForm';
+import FadeUp from '../components/FadeUp';
+---
+
+<section class="py-20 lg:py-28 bg-pure-cream">
+  <Container>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+      <div>
+        <FadeUp client:visible>
+          <span class="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-thai-chili-red mb-3">Contact</span>
+          <h2 class="font-display text-3xl sm:text-4xl font-semibold text-deep-indigo leading-tight mb-4">
+            Get in touch
+          </h2>
+          <p class="text-dusty-slate mb-8 max-w-md">
+            Questions, reservations, or just want to say hi? Drop us a message and we'll get back to you as soon as we can.
+          </p>
+          <ContactForm client:load />
+        </FadeUp>
+      </div>
+      <div class="flex flex-col justify-center">
+        <FadeUp client:visible delay={0.2}>
+          <div class="bg-soft-cream rounded-2xl p-8 lg:p-10 border border-deep-indigo/5">
+            <h3 class="font-display text-xl font-semibold text-deep-indigo mb-4">Follow us</h3>
+            <p class="text-dusty-slate text-sm mb-6">
+              See what's cooking, behind-the-scenes shots, and new dishes before they hit the menu.
+            </p>
+            <div class="flex gap-4 flex-wrap">
+              <a
+                href="https://instagram.com/buriram_restaurant"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-2.5 bg-deep-indigo text-white text-sm font-medium rounded-full hover:bg-deep-indigo/90 transition-colors"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                @buriram_restaurant
+              </a>
+              <a
+                href="https://facebook.com/buriramrestaurant"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 px-5 py-2.5 bg-ceramic-blue text-white text-sm font-medium rounded-full hover:bg-ceramic-blue/90 transition-colors"
+                style={{ backgroundColor: '#3B5A8A' }}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+        </FadeUp>
+      </div>
+    </div>
+  </Container>
+</section>

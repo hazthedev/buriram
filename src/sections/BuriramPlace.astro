@@ -1,0 +1,43 @@
+---
+import Container from '../components/Container.astro';
+import SectionHeading from '../components/SectionHeading.astro';
+import FadeUp from '../components/FadeUp';
+---
+
+<section class="py-20 lg:py-28 bg-pure-cream">
+  <Container>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div>
+        <FadeUp client:visible delay={0.2}>
+          <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-soft-cream">
+            <img
+              src="/images/buriram-province.svg"
+              alt="Rural landscape of Buriram province, Thailand"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+        </FadeUp>
+      </div>
+      <div>
+        <FadeUp client:visible>
+          <SectionHeading
+            eyebrow="Where the Name Comes From"
+            title="Buriram is a real place in northeast Thailand."
+          />
+          <div class="mt-6 space-y-4 text-dusty-slate leading-relaxed max-w-lg">
+            <p>
+              It's a province in the Isan region — known for somtum, larb, grilled meats over open flame. The kind of food that doesn't need a fancy plate to taste good.
+            </p>
+            <p>
+              We didn't pick the name lightly. The food we serve has roots there. The flavors are loud, the herbs are fresh, and the chili is non-negotiable.
+            </p>
+            <p class="text-sm text-dusty-slate/70">
+              Isan cuisine is the soul of rural Thailand — less coconut cream, more lime, fish sauce, and smoke.
+            </p>
+          </div>
+        </FadeUp>
+      </div>
+    </div>
+  </Container>
+</section>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+    <rect width="1200" height="800" fill="#1F2540"/>
+    <rect x="120" y="80" width="960" height="640" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" rx="8"/>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-family="system-ui, sans-serif" font-size="48">OG IMAGE</text>
+  </svg>

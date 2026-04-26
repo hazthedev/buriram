@@ -1,0 +1,25 @@
+{
+  "reviews": [
+    {
+      "source": "Google",
+      "author": "Amanda L.",
+      "rating": 5,
+      "text": "Love the small bowl concept! We ordered 5 different dishes between 2 people and got to try so much. The somtum was fiery and the larb was perfectly balanced.",
+      "date": "2024-11"
+    },
+    {
+      "source": "Google",
+      "author": "Jason T.",
+      "rating": 5,
+      "text": "Finally, authentic Isan flavors in Wangsa Maju. The gai yang tastes like it came straight off a charcoal grill in Buriram. Will be back.",
+      "date": "2024-10"
+    },
+    {
+      "source": "Facebook",
+      "author": "Mei F.",
+      "rating": 5,
+      "text": "Cozy spot with really thoughtful portions. Perfect for when you want variety without waste. The Thai milk tea is the real deal too.",
+      "date": "2024-12"
+    }
+  ]
+}

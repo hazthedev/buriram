@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-soft-cream: #F5F0E5;
+  --color-pure-cream: #FBF7EC;
+  --color-deep-indigo: #1F2540;
+  --color-dusty-slate: #5C6178;
+  --color-thai-chili-red: #C7301B;
+  --color-lemongrass-green: #7A9A6E;
+  --color-lemon-gold: #D9A441;
+  --color-ceramic-blue: #3B5A8A;
+  --color-charred-black: #15171F;
+
+  /* Font families */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-zh: 'Noto Serif SC', 'Songti SC', serif;
+  --font-accent: 'Caveat', cursive;
+}
+
+/* Font imports */
+@import "@fontsource/cormorant-garamond/400.css";
+@import "@fontsource/cormorant-garamond/500.css";
+@import "@fontsource/cormorant-garamond/600.css";
+@import "@fontsource/cormorant-garamond/700.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/noto-serif-sc/400.css";
+@import "@fontsource/noto-serif-sc/700.css";
+@import "@fontsource/caveat/400.css";
+@import "@fontsource/caveat/500.css";
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-soft-cream);
+  color: var(--color-deep-indigo);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus states */
+:focus-visible {
+  outline: 2px solid var(--color-thai-chili-red);
+  outline-offset: 2px;
+}
+
+/* Hide scrollbar utility — keeps scroll functionality, hides the track */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}

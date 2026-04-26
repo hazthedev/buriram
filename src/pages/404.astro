@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+---
+
+<BaseLayout
+  title="Page Not Found | Buriram Restaurant"
+  description="Sorry, the page you're looking for doesn't exist."
+>
+  <section class="min-h-[70vh] flex items-center justify-center bg-soft-cream">
+    <Container>
+      <div class="text-center max-w-xl mx-auto">
+        <span class="font-display text-8xl sm:text-9xl font-semibold text-deep-indigo/10">404</span>
+        <h1 class="font-display text-3xl sm:text-4xl font-semibold text-deep-indigo mt-4">
+          This bowl is empty.
+        </h1>
+        <p class="mt-4 text-dusty-slate">
+          The page you're looking for doesn't exist. Maybe it moved, or maybe the kitchen ran out.
+        </p>
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <Button href="/" variant="primary">Back to Home</Button>
+          <Button href="/menu" variant="outline">View the Menu</Button>
+        </div>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

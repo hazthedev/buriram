@@ -1,0 +1,28 @@
+---
+import Container from '../components/Container.astro';
+import FadeUp from '../components/FadeUp';
+---
+
+<section class="py-20 lg:py-28 bg-pure-cream">
+  <Container>
+    <FadeUp client:visible>
+      <div class="max-w-3xl mx-auto text-center">
+        <span class="inline-block text-xs font-semibold uppercase tracking-[0.2em] text-thai-chili-red mb-3">The Fusion</span>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-deep-indigo leading-tight">
+          Thai flavors. Chinese bowls.<br />Two cultures, one table.
+        </h2>
+        <div class="mt-8 space-y-4 text-dusty-slate leading-relaxed text-left sm:text-center">
+          <p>
+            The fusion isn't in the recipe — it's in the format. We cook Thai, but we serve Chinese. Small bowls, shared plates, ordered in rounds.
+          </p>
+          <p>
+            This means you can have somtum, larb, tom yum, and pad thai all at once. No need to commit to one main. No giant plate of curry you'll get tired of halfway through.
+          </p>
+          <p>
+            It's how we actually eat in Southeast Asia — a spread on the table, everyone digging in. We're just making it official.
+          </p>
+        </div>
+      </div>
+    </FadeUp>
+  </Container>
+</section>

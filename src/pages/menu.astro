@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import MenuHero from '../sections/MenuHero.astro';
+import MenuGrid from '../components/MenuGrid';
+import OrderFlowCallout from '../sections/OrderFlowCallout.astro';
+import OrderCTA from '../sections/OrderCTA.astro';
+---
+
+<BaseLayout
+  title="The Menu | Buriram Restaurant | Thai × Chinese Small Bowls"
+  description="Browse our menu of small-bowl Thai and Chinese fusion dishes. Salads, soups, stir-fries, curries, grilled meats, and drinks. Wangsa Maju, KL."
+  canonical="/menu"
+>
+  <MenuHero />
+  <MenuGrid client:load />
+  <OrderFlowCallout />
+  <OrderCTA />
+</BaseLayout>
