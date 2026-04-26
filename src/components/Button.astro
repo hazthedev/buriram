@@ -7,11 +7,11 @@ interface Props {
 
 const { href, variant = 'primary', class: className = '' } = Astro.props;
 
-const baseStyles = 'inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-full transition-[colors,transform,box-shadow] duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] active:scale-[0.98]';
+const baseStyles = 'inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-full transition-[background-color,color,border-color,transform,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] active:scale-[0.98] active:translate-y-0 motion-reduce:transition-none motion-reduce:hover:transform-none';
 
 const variants = {
-  primary: 'bg-thai-chili-red text-white hover:bg-thai-chili-red/90 hover:shadow-lg hover:shadow-thai-chili-red/20',
-  outline: 'border-2 border-thai-chili-red text-thai-chili-red hover:bg-thai-chili-red hover:text-white hover:shadow-lg hover:shadow-thai-chili-red/15',
+  primary: 'bg-thai-chili-red text-white hover:bg-thai-chili-red/90 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-thai-chili-red/20',
+  outline: 'border-2 border-thai-chili-red text-thai-chili-red hover:bg-thai-chili-red hover:text-white hover:-translate-y-0.5 hover:shadow-lg hover:shadow-thai-chili-red/15',
   ghost: 'text-dusty-slate hover:text-deep-indigo hover:bg-deep-indigo/5',
 };
 
