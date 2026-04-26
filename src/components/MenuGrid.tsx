@@ -11,6 +11,7 @@ interface MenuItem {
   image: string;
   tags: string[];
   signature?: boolean;
+  press?: string;
 }
 
 interface MenuCategory {
@@ -23,10 +24,11 @@ const categories: MenuCategory[] = menuData.categories;
 const allItems = categories.flatMap(cat => cat.items.map(item => ({ ...item, category: cat.name })));
 
 const filterOptions = [
+  { id: 'halal', label: 'Halal ✓' },
   { id: 'spicy', label: 'Spicy 🌶️' },
-  { id: 'vegetarian', label: 'Vegetarian' },
   { id: 'signature', label: 'Signature' },
-  { id: 'cold', label: 'Cold Dish' },
+  { id: 'lamb', label: 'Lamb' },
+  { id: 'beef', label: 'Beef' },
 ];
 
 export default function MenuGrid() {
@@ -47,10 +49,11 @@ export default function MenuGrid() {
     if (activeFilters.length > 0) {
       items = items.filter(item => {
         return activeFilters.some(filter => {
+          if (filter === 'halal') return true;
           if (filter === 'spicy') return item.tags.some(t => t.includes('Spicy'));
-          if (filter === 'vegetarian') return item.tags.includes('Vegetarian');
           if (filter === 'signature') return item.signature;
-          if (filter === 'cold') return item.tags.includes('Cold Dish');
+          if (filter === 'lamb') return item.tags.includes('Lamb');
+          if (filter === 'beef') return item.tags.includes('Beef');
           return false;
         });
       });
@@ -64,7 +67,7 @@ export default function MenuGrid() {
   return (
     <div>
       {/* Category Tabs */}
-      <div className="sticky top-16 lg:top-20 z-40 bg-soft-cream/95 backdrop-blur-md border-b border-deep-indigo/5 py-4">
+      <div className="sticky top-16 lg:top-20 z-40 bg-warm-sand/95 backdrop-blur-md border-b border-charred-brown/5 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
             {categoryTabs.map(tab => (
@@ -73,15 +76,15 @@ export default function MenuGrid() {
                 onClick={() => setActiveCategory(tab.id)}
                 className="relative px-4 py-2 text-sm font-medium whitespace-nowrap transition-colors"
                 style={{
-                  color: activeCategory === tab.id ? '#C7301B' : '#5C6178',
+                  color: activeCategory === tab.id ? '#A8261A' : '#6B5544',
                 }}
               >
                 {tab.name}
                 {activeCategory === tab.id && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-thai-chili-red"
-                    style={{ backgroundColor: '#C7301B' }}
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-xinjiang-red"
+                    style={{ backgroundColor: '#A8261A' }}
                     transition={{ type: 'spring', stiffness: 500, damping: 30 }}
                   />
                 )}
@@ -97,10 +100,10 @@ export default function MenuGrid() {
                 onClick={() => toggleFilter(filter.id)}
                 className={`px-3 py-1.5 text-xs font-medium rounded-full border transition-colors whitespace-nowrap ${
                   activeFilters.includes(filter.id)
-                    ? 'bg-thai-chili-red text-white border-thai-chili-red'
-                    : 'bg-pure-cream text-dusty-slate border-deep-indigo/10 hover:border-deep-indigo/20'
+                    ? 'bg-xinjiang-red text-white border-xinjiang-red'
+                    : 'bg-pure-cream text-earth-brown border-charred-brown/10 hover:border-charred-brown/20'
                 }`}
-                style={activeFilters.includes(filter.id) ? { backgroundColor: '#C7301B', borderColor: '#C7301B' } : {}}
+                style={activeFilters.includes(filter.id) ? { backgroundColor: '#A8261A', borderColor: '#A8261A' } : {}}
               >
                 {filter.label}
               </button>
@@ -124,9 +127,9 @@ export default function MenuGrid() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4 }}
-                className="group bg-pure-cream rounded-xl overflow-hidden border border-deep-indigo/5 hover:shadow-xl hover:shadow-[#3B5A8A]/[0.08] hover:-translate-y-2 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform"
+                className="group bg-pure-cream rounded-xl overflow-hidden border border-charred-brown/5 hover:shadow-xl hover:shadow-[#2D4566]/[0.08] hover:-translate-y-2 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform"
               >
-                <div className="aspect-square overflow-hidden bg-soft-cream">
+                <div className="aspect-square overflow-hidden bg-warm-sand">
                   <img
                     src={item.image}
                     alt={`${item.englishName} — ${item.name}`}
@@ -137,22 +140,27 @@ export default function MenuGrid() {
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div>
-                      <h3 className="font-display text-xl font-semibold text-deep-indigo">{item.name}</h3>
-                      <p className="text-sm italic text-dusty-slate">{item.englishName}</p>
+                      <h3 className="font-display text-xl font-semibold text-charred-brown">{item.name}</h3>
+                      <p className="text-sm italic text-earth-brown">{item.englishName}</p>
                     </div>
                     {item.signature && (
-                      <span className="shrink-0 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-thai-chili-red/10 text-thai-chili-red">
-                        Signature
+                      <span className="shrink-0 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-xinjiang-red/10 text-xinjiang-red">
+                        招牌 Signature
                       </span>
                     )}
                   </div>
-                  <p className="text-sm text-dusty-slate leading-relaxed mb-3">{item.description}</p>
+                  {item.press && (
+                    <p className="text-xs text-cumin-gold font-medium mb-2">
+                      ★ {item.press}
+                    </p>
+                  )}
+                  <p className="text-sm text-earth-brown leading-relaxed mb-3">{item.description}</p>
                   <div className="flex items-center justify-between">
-                    <span className="font-body font-bold text-deep-indigo">{item.price}</span>
+                    <span className="font-body font-bold text-charred-brown">{item.price}</span>
                     {item.tags.length > 0 && (
                       <div className="flex gap-1.5">
                         {item.tags.map(tag => (
-                          <span key={tag} className="text-xs text-dusty-slate bg-soft-cream px-2 py-0.5 rounded">
+                          <span key={tag} className="text-xs text-earth-brown bg-warm-sand px-2 py-0.5 rounded">
                             {tag}
                           </span>
                         ))}
@@ -167,7 +175,7 @@ export default function MenuGrid() {
 
         {filteredItems.length === 0 && (
           <div className="text-center py-16">
-            <p className="text-dusty-slate">No items match your filters. Try adjusting your selection.</p>
+            <p className="text-earth-brown">No items match your filters. Try adjusting your selection.</p>
           </div>
         )}
       </div>

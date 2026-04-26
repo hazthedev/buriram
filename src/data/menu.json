@@ -1,184 +1,136 @@
 {
   "categories": [
     {
-      "id": "salads",
-      "name": "Salads (Yum)",
+      "id": "lamb-specialties",
+      "name": "Lamb Specialties",
       "items": [
         {
-          "id": "somtum",
-          "name": "Somtum",
-          "englishName": "Green Papaya Salad",
-          "description": "Shredded green papaya with cherry tomatoes, long beans, peanuts, and a fiery lime-fish-sauce dressing.",
-          "price": "RM 12",
-          "image": "/images/bowls/somtum.svg",
-          "tags": ["Spicy 🌶️", "Cold Dish"],
+          "id": "roast-lamb-ribs",
+          "name": "Roast Lamb Ribs",
+          "englishName": "招牌烤羊排",
+          "description": "The showstopper. Deep-fried lamb ribs, deeply spiced with cumin and chili. Crispy outside, tender inside. Half our reviews are about this dish.",
+          "price": "RM 25",
+          "image": "/images/roast-lamb-ribs.svg",
+          "tags": ["Spicy 🌶️", "Signature", "Lamb"],
+          "signature": true,
+          "press": "Featured in Malay Mail"
+        },
+        {
+          "id": "lamb-short-ribs",
+          "name": "Lamb Short Ribs",
+          "englishName": "羊小排",
+          "description": "Insanely tender, perfectly seasoned, full of soul. Slow-braised until the meat falls off the bone.",
+          "price": "RM 22",
+          "image": "/images/lamb-short-ribs.svg",
+          "tags": ["Signature", "Lamb"],
           "signature": true
         },
         {
-          "id": "larb-gai",
-          "name": "Larb Gai",
-          "englishName": "Minced Chicken Salad",
-          "description": "Isan-style minced chicken with toasted rice powder, shallots, mint, and a sharp lime dressing.",
-          "price": "RM 14",
-          "image": "/images/bowls/larb-gai.svg",
-          "tags": ["Spicy 🌶️", "Signature"],
-          "signature": true
-        },
-        {
-          "id": "yum-woonsen",
-          "name": "Yum Woonsen",
-          "englishName": "Glass Noodle Salad",
-          "description": "Springy glass noodles tossed with minced pork, shrimp, and a tangy chili-lime dressing.",
-          "price": "RM 13",
-          "image": "/images/bowls/yum-woonsen.svg",
-          "tags": ["Spicy 🌶️", "Cold Dish"]
+          "id": "lamb-chops",
+          "name": "Lamb Chops",
+          "englishName": "羊排",
+          "description": "Tender, flavorful lamb chops grilled with cumin and Sichuan peppercorns. A Xinjiang classic.",
+          "price": "RM 20",
+          "image": "/images/lamb-chops.svg",
+          "tags": ["Spicy 🌶️", "Lamb"]
         }
       ]
     },
     {
-      "id": "soups",
-      "name": "Soups (Tom)",
+      "id": "beef-dishes",
+      "name": "Beef Dishes",
       "items": [
         {
-          "id": "tom-yum-goong",
-          "name": "Tom Yum Goong",
-          "englishName": "Hot & Sour Shrimp Soup",
-          "description": "The classic — lemongrass, galangal, kaffir lime, bird's eye chili, and plump shrimp in a fragrant broth.",
-          "price": "RM 16",
-          "image": "/images/bowls/tom-yum-goong.svg",
-          "tags": ["Spicy 🌶️", "Signature"],
-          "signature": true
-        },
-        {
-          "id": "tom-kha-gai",
-          "name": "Tom Kha Gai",
-          "englishName": "Coconut Chicken Soup",
-          "description": "Creamy coconut milk broth with chicken, galangal, and lime leaves. Milder than tom yum, just as comforting.",
-          "price": "RM 15",
-          "image": "/images/bowls/tom-kha-gai.svg",
-          "tags": ["Signature"]
-        }
-      ]
-    },
-    {
-      "id": "stir-fries",
-      "name": "Stir-Fries",
-      "items": [
-        {
-          "id": "pad-kra-pao",
-          "name": "Pad Kra Pao",
-          "englishName": "Basil Stir-Fry",
-          "description": "Holy basil, chili, and garlic wok-fried with your choice of minced chicken or pork. Topped with a crispy fried egg.",
-          "price": "RM 14",
-          "image": "/images/bowls/pad-kra-pao.svg",
-          "tags": ["Spicy 🌶️", "Signature"],
-          "signature": true
-        },
-        {
-          "id": "pad-phet",
-          "name": "Pad Phet",
-          "englishName": "Red Curry Paste Stir-Fry",
-          "description": "Red curry paste, long beans, and kaffir lime leaves stir-fried with pork or chicken.",
-          "price": "RM 14",
-          "image": "/images/bowls/pad-phet.svg",
-          "tags": ["Spicy 🌶️"]
-        }
-      ]
-    },
-    {
-      "id": "curries",
-      "name": "Curries",
-      "items": [
-        {
-          "id": "green-curry",
-          "name": "Gaeng Keow Wan",
-          "englishName": "Green Curry",
-          "description": "Creamy green curry with chicken, Thai eggplant, bamboo shoots, and sweet basil.",
-          "price": "RM 15",
-          "image": "/images/bowls/green-curry.svg",
-          "tags": ["Spicy 🌶️"]
-        },
-        {
-          "id": "massaman-curry",
-          "name": "Gaeng Massaman",
-          "englishName": "Massaman Curry",
-          "description": "Mild, nutty curry with potato, onion, and peanuts. A Thai-Malay fusion classic.",
-          "price": "RM 16",
-          "image": "/images/bowls/massaman-curry.svg",
-          "tags": ["Signature"]
-        }
-      ]
-    },
-    {
-      "id": "grilled",
-      "name": "Grilled (Yang)",
-      "items": [
-        {
-          "id": "gai-yang",
-          "name": "Gai Yang",
-          "englishName": "Isan Grilled Chicken",
-          "description": "Marinated chicken grilled over charcoal until the skin is crisp and the meat is juicy. Served with tamarind dipping sauce.",
+          "id": "spiced-beef",
+          "name": "Spiced Beef",
+          "englishName": "五香牛肉",
+          "description": "Co-showstopper with the lamb. Tender beef slices in a rich, aromatic spice blend. Addictive.",
           "price": "RM 18",
-          "image": "/images/bowls/gai-yang.svg",
-          "tags": ["Signature"],
+          "image": "/images/spiced-beef.svg",
+          "tags": ["Signature", "Beef"],
           "signature": true
         },
         {
-          "id": "moo-ping",
-          "name": "Moo Ping",
-          "englishName": "Grilled Pork Skewers",
-          "description": "Sweet-savory marinated pork skewers, grilled and caramelized. A street-food favorite.",
-          "price": "RM 12",
-          "image": "/images/bowls/moo-ping.svg",
-          "tags": []
+          "id": "beef-kebab",
+          "name": "Beef Kebab",
+          "englishName": "牛肉串",
+          "description": "Soft sliced beef, velvety texture, grilled over charcoal. Smoky, savory, irresistible.",
+          "price": "RM 15",
+          "image": "/images/beef-kebab.svg",
+          "tags": ["Beef"]
         }
       ]
     },
     {
-      "id": "rice-noodles",
-      "name": "Rice & Noodles",
+      "id": "dumplings-noodles",
+      "name": "Dumplings & Noodles",
       "items": [
         {
-          "id": "pad-thai",
-          "name": "Pad Thai",
-          "englishName": "Thai Stir-Fried Noodles",
-          "description": "Rice noodles wok-tossed with egg, tofu, bean sprouts, and crushed peanuts in tamarind sauce.",
+          "id": "dumplings-chili-oil",
+          "name": "Dumplings with Chili Oil",
+          "englishName": "红油水饺",
+          "description": "Plump, juicy dumplings swimming in smoky aromatic chili oil. Made with love. Ruins all other chili oils for you.",
+          "price": "RM 12",
+          "image": "/images/dumplings-chili-oil.svg",
+          "tags": ["Spicy 🌶️", "Signature"],
+          "signature": true
+        },
+        {
+          "id": "hand-pulled-noodles",
+          "name": "Hand-Pulled Noodles",
+          "englishName": "拉面",
+          "description": "La mian — noodles pulled by hand, served in a rich lamb broth with herbs. The art of Xinjiang noodle-making.",
           "price": "RM 14",
-          "image": "/images/bowls/pad-thai.svg",
-          "tags": [],
-          "signature": true
-        },
-        {
-          "id": "khao-pad",
-          "name": "Khao Pad",
-          "englishName": "Thai Fried Rice",
-          "description": "Jasmine rice fried with egg, garlic, and your choice of protein. Simple, aromatic, essential.",
-          "price": "RM 12",
-          "image": "/images/bowls/khao-pad.svg",
-          "tags": []
+          "image": "/images/hand-pulled-noodles.svg",
+          "tags": ["Lamb"]
         }
       ]
     },
     {
-      "id": "sides",
-      "name": "Sides",
+      "id": "rice-dishes",
+      "name": "Rice Dishes",
       "items": [
         {
-          "id": "sticky-rice",
-          "name": "Khao Niao",
-          "englishName": "Sticky Rice",
-          "description": "Steamed glutinous rice — the perfect companion to larb, somtum, and grilled meats.",
-          "price": "RM 4",
-          "image": "/images/bowls/sticky-rice.svg",
-          "tags": ["Vegetarian"]
+          "id": "beef-fried-rice",
+          "name": "Beef Fried Rice",
+          "englishName": "牛肉炒饭",
+          "description": "Delicious standout. Wok-fried rice with tender beef, vegetables, and that unmistakable Xinjiang spice.",
+          "price": "RM 14",
+          "image": "/images/beef-fried-rice.svg",
+          "tags": ["Beef"]
         },
         {
-          "id": "jasmine-rice",
-          "name": "Khao Suay",
-          "englishName": "Jasmine Rice",
-          "description": "Fragrant steamed jasmine rice.",
-          "price": "RM 3",
-          "image": "/images/bowls/jasmine-rice.svg",
+          "id": "lamb-pilaf",
+          "name": "Lamb Pilaf",
+          "englishName": "羊肉抓饭",
+          "description": "Fragrant rice cooked with lamb, carrots, and raisins. A Silk Road staple, hearty and comforting.",
+          "price": "RM 16",
+          "image": "/images/lamb-pilaf.svg",
+          "tags": ["Lamb", "Signature"],
+          "signature": true
+        }
+      ]
+    },
+    {
+      "id": "vegetable-sides",
+      "name": "Vegetable Sides",
+      "items": [
+        {
+          "id": "smashed-cucumber",
+          "name": "Smashed Cucumber",
+          "englishName": "拍黄瓜",
+          "description": "Crisp cucumber with garlic, vinegar, and chili oil. Refreshing counterpoint to rich lamb dishes.",
+          "price": "RM 8",
+          "image": "/images/smashed-cucumber.svg",
+          "tags": ["Spicy 🌶️", "Vegetarian"]
+        },
+        {
+          "id": "stir-fried-greens",
+          "name": "Stir-Fried Greens",
+          "englishName": "炒时蔬",
+          "description": "Seasonal greens wok-fried with garlic. Simple, clean, essential.",
+          "price": "RM 10",
+          "image": "/images/stir-fried-greens.svg",
           "tags": ["Vegetarian"]
         }
       ]
@@ -188,48 +140,32 @@
       "name": "Drinks",
       "items": [
         {
-          "id": "thai-milk-tea",
-          "name": "Cha Yen",
-          "englishName": "Thai Milk Tea",
-          "description": "Strong brewed black tea with condensed milk, poured over ice. Sweet, creamy, essential.",
-          "price": "RM 7",
-          "image": "/images/bowls/thai-milk-tea.svg",
-          "tags": [],
-          "signature": true
-        },
-        {
-          "id": "thai-green-tea",
-          "name": "Cha Keow Yen",
-          "englishName": "Thai Green Milk Tea",
-          "description": "Jasmine green tea with milk and a hint of vanilla. Lighter than the classic.",
-          "price": "RM 7",
-          "image": "/images/bowls/thai-green-tea.svg",
-          "tags": []
-        },
-        {
-          "id": "lime-soda",
-          "name": "Manao Soda",
-          "englishName": "Lime Soda",
-          "description": "Fresh lime juice, soda water, and a touch of syrup. The ultimate palate refresher.",
+          "id": "hawthorn-plum",
+          "name": "Hawthorn Plum Drink",
+          "englishName": "山楂梅子",
+          "description": "The signature drink. Sweet-tart hawthorn and plum, chilled. Cuts through the richness of lamb perfectly. Don't skip this.",
           "price": "RM 6",
-          "image": "/images/bowls/lime-soda.svg",
-          "tags": []
-        }
-      ]
-    },
-    {
-      "id": "desserts",
-      "name": "Desserts",
-      "items": [
-        {
-          "id": "mango-sticky-rice",
-          "name": "Khao Niao Mamuang",
-          "englishName": "Mango Sticky Rice",
-          "description": "Sweet sticky rice with ripe mango and coconut cream. The perfect end to a spicy meal.",
-          "price": "RM 10",
-          "image": "/images/bowls/mango-sticky-rice.svg",
-          "tags": ["Vegetarian"],
+          "image": "/images/hawthorn-plum.svg",
+          "tags": ["Signature"],
           "signature": true
+        },
+        {
+          "id": "jasmine-tea",
+          "name": "Jasmine Tea",
+          "englishName": "茉莉花茶",
+          "description": "Fragrant jasmine tea, hot or iced. The classic Chinese-Muslim dining companion.",
+          "price": "RM 4",
+          "image": "/images/jasmine-tea.svg",
+          "tags": []
+        },
+        {
+          "id": "soy-milk",
+          "name": "Fresh Soy Milk",
+          "englishName": "豆浆",
+          "description": "Freshly made soy milk, warm or cold. Smooth, nutty, comforting.",
+          "price": "RM 5",
+          "image": "/images/soy-milk.svg",
+          "tags": ["Vegetarian"]
         }
       ]
     }

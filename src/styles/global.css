@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colors */
-  --color-soft-cream: #F5F0E5;
+  /* Colors — Lamb Shepherd (Xinjiang Chinese-Muslim) */
+  --color-warm-sand: #F2EBDA;
   --color-pure-cream: #FBF7EC;
-  --color-deep-indigo: #1F2540;
-  --color-dusty-slate: #5C6178;
-  --color-thai-chili-red: #C7301B;
-  --color-lemongrass-green: #7A9A6E;
-  --color-lemon-gold: #D9A441;
-  --color-ceramic-blue: #3B5A8A;
-  --color-charred-black: #15171F;
+  --color-charred-brown: #2D1F18;
+  --color-earth-brown: #6B5544;
+  --color-xinjiang-red: #A8261A;
+  --color-cumin-gold: #C9A24E;
+  --color-saffron: #E8B838;
+  --color-silk-road-indigo: #2D4566;
+  --color-coal: #1A1612;
 
   /* Font families */
   --font-display: 'Cormorant Garamond', Georgia, serif;
@@ -40,15 +40,15 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-soft-cream);
-  color: var(--color-deep-indigo);
+  background-color: var(--color-warm-sand);
+  color: var(--color-charred-brown);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Focus states */
 :focus-visible {
-  outline: 2px solid var(--color-thai-chili-red);
+  outline: 2px solid var(--color-xinjiang-red);
   outline-offset: 2px;
 }
 

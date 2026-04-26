@@ -1,25 +1,25 @@
 {
   "reviews": [
     {
-      "source": "Google",
-      "author": "Amanda L.",
+      "source": "Tripadvisor",
+      "author": "Ahmad R.",
       "rating": 5,
-      "text": "Love the small bowl concept! We ordered 5 different dishes between 2 people and got to try so much. The somtum was fiery and the larb was perfectly balanced.",
-      "date": "2024-11"
+      "text": "The roast lamb ribs are legendary. Deep-fried, deeply spiced, and they disappear in minutes. Hidden between car workshops but absolutely worth the trip. Most of the diners here are Chinese Muslims — that's how you know it's the real thing.",
+      "date": "2024-03"
     },
     {
       "source": "Google",
-      "author": "Jason T.",
+      "author": "Sarah L.",
       "rating": 5,
-      "text": "Finally, authentic Isan flavors in Wangsa Maju. The gai yang tastes like it came straight off a charcoal grill in Buriram. Will be back.",
-      "date": "2024-10"
+      "text": "Finally, authentic halal Xinjiang cuisine in KL! The dumplings with chili oil are made with love, and the hawthorn plum drink is unlike anything else. Newly renovated interior looks great too.",
+      "date": "2024-02"
     },
     {
       "source": "Facebook",
-      "author": "Mei F.",
+      "author": "Wei Ming",
       "rating": 5,
-      "text": "Cozy spot with really thoughtful portions. Perfect for when you want variety without waste. The Thai milk tea is the real deal too.",
-      "date": "2024-12"
+      "text": "Been coming here since 2016. The spiced beef and hand-pulled noodles are my go-to order. No flashy signage, just incredible food. The regulars know what's up.",
+      "date": "2024-01"
     }
   ]
 }

@@ -11,12 +11,12 @@ const signatureItems = menuData.categories
   .slice(0, 4);
 ---
 
-<section class="py-20 lg:py-28 bg-soft-cream">
+<section class="py-20 lg:py-28 bg-warm-sand">
   <Container>
     <FadeUp client:visible>
       <SectionHeading
         title="What ends up on the table."
-        subtitle="Small bowls, big personalities. Salads with bite, soups with depth, grilled meats with smoke."
+        subtitle="Roast lamb ribs that disappear in minutes. Dumplings with chili oil that ruins all others. Hand-pulled noodles made fresh."
         align="center"
       />
     </FadeUp>
@@ -31,6 +31,7 @@ const signatureItems = menuData.categories
             image={item.image}
             tags={item.tags}
             signature={item.signature}
+            press={item.press}
           />
         </FadeUp>
       ))}
@@ -39,7 +40,7 @@ const signatureItems = menuData.categories
       <div class="mt-12 text-center">
         <a
           href="/menu"
-          class="inline-flex items-center gap-2 text-thai-chili-red font-medium hover:underline"
+          class="inline-flex items-center gap-2 text-xinjiang-red font-medium hover:underline"
         >
           View full menu
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>

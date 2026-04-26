@@ -2,8 +2,8 @@
     <rect width="1200" height="800" fill="#6B5544"/>
     <rect x="96" y="64" width="1008" height="672" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="8"/>
     <g transform="translate(588, 372)">
-      <circle cx="12" cy="8" r="3" fill="none" stroke="#6B5544" stroke-width="1.5"/><path d="M8 14c0-2 2-3 4-3s4 1 4 3" fill="none" stroke="#6B5544" stroke-width="1.5"/>
+      <circle cx="12" cy="12" r="7" fill="none" stroke="#6B5544" stroke-width="1.5"/><circle cx="12" cy="12" r="4" fill="none" stroke="#6B5544" stroke-width="1" opacity="0.5"/>
     </g>
-    <text x="50%" y="520" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="'Noto Serif SC', serif" font-size="56.00000000000001" font-weight="500">OUR STORY</text>
+    <text x="50%" y="520" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="'Noto Serif SC', serif" font-size="56.00000000000001" font-weight="500">DISH</text>
     <text x="50%" y="624" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui, sans-serif" font-size="32">Lamb Shepherd</text>
   </svg>

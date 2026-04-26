@@ -33,7 +33,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-deep-indigo mb-1.5">
+        <label htmlFor="name" className="block text-sm font-medium text-charred-brown mb-1.5">
           Name
         </label>
         <input
@@ -41,13 +41,13 @@ export default function ContactForm() {
           id="name"
           name="name"
           required
-          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-deep-indigo/10 text-deep-indigo placeholder-dusty-slate/50 focus:outline-none focus:ring-2 focus:ring-thai-chili-red/30 focus:border-thai-chili-red transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-charred-brown/10 text-charred-brown placeholder-earth-brown/50 focus:outline-none focus:ring-2 focus:ring-xinjiang-red/30 focus:border-xinjiang-red transition-colors"
           placeholder="Your name"
         />
       </div>
 
       <div>
-        <label htmlFor="contact" className="block text-sm font-medium text-deep-indigo mb-1.5">
+        <label htmlFor="contact" className="block text-sm font-medium text-charred-brown mb-1.5">
           Phone or Email
         </label>
         <input
@@ -55,25 +55,25 @@ export default function ContactForm() {
           id="contact"
           name="contact"
           required
-          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-deep-indigo/10 text-deep-indigo placeholder-dusty-slate/50 focus:outline-none focus:ring-2 focus:ring-thai-chili-red/30 focus:border-thai-chili-red transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-charred-brown/10 text-charred-brown placeholder-earth-brown/50 focus:outline-none focus:ring-2 focus:ring-xinjiang-red/30 focus:border-xinjiang-red transition-colors"
           placeholder="+60 12-345 6789 or hello@example.com"
         />
       </div>
 
       <div>
-        <label htmlFor="date" className="block text-sm font-medium text-deep-indigo mb-1.5">
+        <label htmlFor="date" className="block text-sm font-medium text-charred-brown mb-1.5">
           Reservation Date (optional)
         </label>
         <input
           type="date"
           id="date"
           name="date"
-          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-deep-indigo/10 text-deep-indigo placeholder-dusty-slate/50 focus:outline-none focus:ring-2 focus:ring-thai-chili-red/30 focus:border-thai-chili-red transition-colors"
+          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-charred-brown/10 text-charred-brown placeholder-earth-brown/50 focus:outline-none focus:ring-2 focus:ring-xinjiang-red/30 focus:border-xinjiang-red transition-colors"
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-deep-indigo mb-1.5">
+        <label htmlFor="message" className="block text-sm font-medium text-charred-brown mb-1.5">
           Message
         </label>
         <textarea
@@ -81,7 +81,7 @@ export default function ContactForm() {
           name="message"
           rows={4}
           required
-          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-deep-indigo/10 text-deep-indigo placeholder-dusty-slate/50 focus:outline-none focus:ring-2 focus:ring-thai-chili-red/30 focus:border-thai-chili-red transition-colors resize-none"
+          className="w-full px-4 py-3 rounded-lg bg-pure-cream border border-charred-brown/10 text-charred-brown placeholder-earth-brown/50 focus:outline-none focus:ring-2 focus:ring-xinjiang-red/30 focus:border-xinjiang-red transition-colors resize-none"
           placeholder="How can we help? Table reservation, group order, or just a question..."
         />
       </div>
@@ -89,19 +89,19 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-thai-chili-red text-white font-medium rounded-full hover:bg-thai-chili-red/90 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
-        style={{ backgroundColor: '#C7301B' }}
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-xinjiang-red text-white font-medium rounded-full hover:bg-xinjiang-red/90 disabled:opacity-60 disabled:cursor-not-allowed transition-colors"
+        style={{ backgroundColor: '#A8261A' }}
       >
         {status === 'submitting' ? 'Sending...' : 'Send Message'}
       </button>
 
       {status === 'success' && (
-        <p className="text-sm text-lemongrass-green font-medium">
+        <p className="text-sm text-cumin-gold font-medium">
           Thanks! We'll get back to you soon.
         </p>
       )}
       {status === 'error' && (
-        <p className="text-sm text-thai-chili-red font-medium">
+        <p className="text-sm text-xinjiang-red font-medium">
           Something went wrong. Please try again or WhatsApp us directly.
         </p>
       )}

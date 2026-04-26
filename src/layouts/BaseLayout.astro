@@ -12,7 +12,7 @@ interface Props {
 }
 
 const { title, description, ogImage = '/og-image.svg', canonical } = Astro.props;
-const rawSiteUrl = Astro.site?.toString() || 'https://buriram-restaurant.vercel.app';
+const rawSiteUrl = Astro.site?.toString() || 'https://lamb-shepherd.vercel.app';
 const siteUrl = rawSiteUrl.replace(/\/$/, '');
 const canonicalUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.toString();
 ---
@@ -48,39 +48,40 @@ const canonicalUrl = canonical ? `${siteUrl}${canonical}` : Astro.url.toString()
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Buriram Restaurant",
-    "alternateName": "泰国小小碗",
-    "description": "Authentic Thai cuisine served in small Chinese-style bowls. Thai X Chinese fusion in Wangsa Maju, KL.",
+    "name": "Lamb Shepherd Restaurant",
+    "alternateName": "中国穆斯林餐厅",
+    "description": "Authentic Xinjiang Chinese-Muslim cuisine in Desa Setapak, KL. Halal roast lamb ribs, hand-pulled noodles, dumplings with chili oil.",
     "url": siteUrl,
-    "telephone": "+60-12-833-1059",
-    "email": "ttktrading0103@gmail.com",
+    "telephone": "+60-3-4131-8144",
     "priceRange": "$$",
-    "servesCuisine": ["Thai", "Chinese", "Isan"],
+    "servesCuisine": ["Xinjiang", "Chinese-Muslim", "Halal"],
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "8A, Ground Floor, Jalan 4/27F, Off Jalan Genting Klang",
       "addressLocality": "Kuala Lumpur",
-      "addressRegion": "Wangsa Maju",
+      "addressRegion": "Desa Setapak",
+      "postalCode": "53300",
       "addressCountry": "MY"
     },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-        "opens": "11:00",
-        "closes": "22:00"
+        "opens": "11:30",
+        "closes": "21:30"
       }
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "4.6",
-      "reviewCount": "155"
+      "ratingValue": "4.8",
+      "reviewCount": "220"
     },
     "sameAs": [
-      "https://instagram.com/buriram_restaurant"
+      "https://facebook.com/lambshepherdrestaurant"
     ]
   })} />
 </head>
-<body class="bg-soft-cream text-deep-indigo antialiased">
+<body class="bg-warm-sand text-charred-brown antialiased">
   <Navbar />
   <main>
     <slot />

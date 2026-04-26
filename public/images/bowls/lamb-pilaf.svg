@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+    <rect width="600" height="600" fill="#E8B838"/>
+    <rect x="48" y="48" width="504" height="504" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="8"/>
+    <g transform="translate(288, 272)">
+      <path d="M6 16c0-4 3-6 6-6s6 2 6 6" fill="none" stroke="#E8B838" stroke-width="1.5"/><circle cx="10" cy="13" r="1" fill="#E8B838" opacity="0.5"/><circle cx="14" cy="12" r="1" fill="#E8B838" opacity="0.5"/>
+    </g>
+    <text x="50%" y="390" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="'Noto Serif SC', serif" font-size="42.00000000000001" font-weight="500">羊肉抓饭</text>
+    <text x="50%" y="468" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui, sans-serif" font-size="24">Lamb Shepherd</text>
+  </svg>

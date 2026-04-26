@@ -7,13 +7,14 @@ interface Props {
   image?: string;
   tags?: string[];
   signature?: boolean;
+  press?: string;
 }
 
-const { name, englishName, description, price, image = '/images/bowl-placeholder.svg', tags = [], signature = false } = Astro.props;
+const { name, englishName, description, price, image = '/images/plate-placeholder.svg', tags = [], signature = false, press } = Astro.props;
 ---
 
-<article class="group bg-pure-cream rounded-xl overflow-hidden border border-deep-indigo/5 hover:shadow-xl hover:shadow-ceramic-blue/[0.08] hover:-translate-y-2 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform">
-  <div class="aspect-square overflow-hidden bg-soft-cream">
+<article class="group bg-pure-cream rounded-xl overflow-hidden border border-charred-brown/5 hover:shadow-xl hover:shadow-silk-road-indigo/[0.08] hover:-translate-y-2 transition-[transform,box-shadow] duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] will-change-transform">
+  <div class="aspect-square overflow-hidden bg-warm-sand">
     <img
       src={image}
       alt={`${englishName} — ${name}`}
@@ -24,22 +25,27 @@ const { name, englishName, description, price, image = '/images/bowl-placeholder
   <div class="p-5">
     <div class="flex items-start justify-between gap-3 mb-2">
       <div>
-        <h3 class="font-display text-xl font-semibold text-deep-indigo">{name}</h3>
-        <p class="text-sm italic text-dusty-slate">{englishName}</p>
+        <h3 class="font-display text-xl font-semibold text-charred-brown">{name}</h3>
+        <p class="text-sm italic text-earth-brown">{englishName}</p>
       </div>
       {signature && (
-        <span class="shrink-0 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-thai-chili-red/10 text-thai-chili-red">
-          Signature
+        <span class="shrink-0 inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-xinjiang-red/10 text-xinjiang-red">
+          招牌 Signature
         </span>
       )}
     </div>
-    <p class="text-sm text-dusty-slate leading-relaxed mb-3">{description}</p>
+    {press && (
+      <p class="text-xs text-cumin-gold font-medium mb-2">
+        ★ {press}
+      </p>
+    )}
+    <p class="text-sm text-earth-brown leading-relaxed mb-3">{description}</p>
     <div class="flex items-center justify-between">
-      <span class="font-body font-bold text-deep-indigo">{price}</span>
+      <span class="font-body font-bold text-charred-brown">{price}</span>
       {tags.length > 0 && (
         <div class="flex gap-1.5">
           {tags.map(tag => (
-            <span class="text-xs text-dusty-slate bg-soft-cream px-2 py-0.5 rounded">
+            <span class="text-xs text-earth-brown bg-warm-sand px-2 py-0.5 rounded">
               {tag}
             </span>
           ))}

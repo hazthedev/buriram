@@ -9,7 +9,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://buriram-restaurant.vercel.app',
+  site: 'https://lamb-shepherd.vercel.app',
   vite: {
     plugins: [tailwindcss()]
   },

@@ -1,41 +1,41 @@
 {
-  "name": "Buriram Restaurant",
-  "alternateName": "泰国小小碗",
-  "tagline": "Thai flavors. Chinese bowls.",
-  "description": "Authentic Thai cuisine served in small Chinese-style bowls. Thai X Chinese fusion in Wangsa Maju, KL.",
+  "name": "Lamb Shepherd Restaurant",
+  "alternateName": "中国穆斯林餐厅",
+  "tagline": "Xinjiang on a plate.",
+  "description": "Authentic Xinjiang Chinese-Muslim cuisine in Desa Setapak, KL. Halal roast lamb ribs, hand-pulled noodles, dumplings with chili oil. Hidden gem worth the drive.",
   "address": {
-    "street": "Wangsa Maju",
+    "street": "8A, Ground Floor, Jalan 4/27F, Off Jalan Genting Klang",
     "city": "Kuala Lumpur",
-    "state": "Wilayah Persekutuan",
+    "state": "Desa Setapak",
+    "postalCode": "53300",
     "country": "Malaysia",
-    "full": "Wangsa Maju, Kuala Lumpur"
+    "full": "8A, Ground Floor, Jalan 4/27F, Off Jalan Genting Klang, Desa Setapak, 53300 Kuala Lumpur"
   },
-  "phone": "+60 12-833 1059",
-  "whatsapp": "60128331059",
-  "email": "ttktrading0103@gmail.com",
+  "phone": "+60 3-4131 8144",
+  "whatsapp": "601111939872",
+  "email": "lamb shepherd@mail.com",
   "hours": {
-    "monday": "11:00 – 22:00",
-    "tuesday": "11:00 – 22:00",
-    "wednesday": "11:00 – 22:00",
-    "thursday": "11:00 – 22:00",
-    "friday": "11:00 – 22:00",
-    "saturday": "11:00 – 22:00",
-    "sunday": "11:00 – 22:00"
+    "monday": "11:30 – 21:30",
+    "tuesday": "11:30 – 21:30",
+    "wednesday": "11:30 – 21:30",
+    "thursday": "11:30 – 21:30",
+    "friday": "11:30 – 21:30",
+    "saturday": "11:30 – 21:30",
+    "sunday": "11:30 – 21:30"
   },
   "social": {
-    "instagram": "https://instagram.com/buriram_restaurant",
-    "facebook": "https://facebook.com/buriramrestaurant"
+    "facebook": "https://facebook.com/lambshepherdrestaurant"
   },
-  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Buriram+Restaurant+Wangsa+Maju",
-  "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.6!2d101.73!3d3.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTInMDAuMCJOIDEwMcKwNDMnNDguMCJF!5e0!3m2!1sen!2smy!4v1700000000000",
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lamb+Shepherd+Restaurant+Desa+Setapak",
+  "googleMapsEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5!2d101.72!3d3.2!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMTInMDAuMCJOIDEwMcKwNDMnMTIuMCJF!5e0!3m2!1sen!2smy!4v1700000000000",
   "ratings": {
-    "google": {
-      "score": 4.6,
-      "count": 155
+    "tripadvisor": {
+      "score": 4.8,
+      "count": 220
     },
     "facebook": {
-      "recommendationRate": 100,
-      "count": 5
+      "likes": 2392,
+      "checkins": 1778
     }
   }
 }

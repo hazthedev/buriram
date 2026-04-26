@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+    <rect width="600" height="600" fill="#2D1F18"/>
+    <rect x="48" y="48" width="504" height="504" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="8"/>
+    <g transform="translate(288, 272)">
+      <path d="M6 10c2 2 4 0 6 2s4 0 6 2" fill="none" stroke="#2D1F18" stroke-width="1.5"/><path d="M6 14c2 2 4 0 6 2s4 0 6 2" fill="none" stroke="#2D1F18" stroke-width="1.5"/>
+    </g>
+    <text x="50%" y="390" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="'Noto Serif SC', serif" font-size="42.00000000000001" font-weight="500">拉面</text>
+    <text x="50%" y="468" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui, sans-serif" font-size="24">Lamb Shepherd</text>
+  </svg>
