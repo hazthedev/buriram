@@ -1,9 +1,93 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-    <rect width="1200" height="800" fill="#C9A24E"/>
-    <rect x="96" y="64" width="1008" height="672" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="8"/>
-    <g transform="translate(588, 372)">
-      <circle cx="12" cy="10" r="4" fill="none" stroke="#C9A24E" stroke-width="1.5"/><path d="M8 14c0-2 2-4 4-4s4 2 4 4" fill="none" stroke="#C9A24E" stroke-width="1.5"/><path d="M10 18h4" stroke="#C9A24E" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="Mortar and pestle with chili, lime and lemongrass on a banana leaf">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ece4c4"/>
+      <stop offset="100%" stop-color="#d8cfa8"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1f4d3d"/>
+      <stop offset="100%" stop-color="#15362b"/>
+    </linearGradient>
+    <linearGradient id="goldG" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e6c068"/>
+      <stop offset="100%" stop-color="#a47820"/>
+    </linearGradient>
+    <filter id="grain2"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0.7  0 0 0 0 0.55  0 0 0 0 0.2  0 0 0 0.10 0"/></filter>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)"/>
+
+  <g transform="translate(400, 520)">
+    <ellipse cx="0" cy="0" rx="320" ry="380" fill="url(#leaf)"/>
+    <g stroke="#0e2a22" stroke-opacity="0.55" stroke-width="2" fill="none">
+      <path d="M0 -370 L 0 370"/>
+      <path d="M0 -300 L 240 -160 M0 -240 L 270 -100 M0 -180 L 285 -40 M0 -120 L 295 30 M0 -60 L 300 100 M0 0 L 300 170 M0 60 L 290 240 M0 120 L 270 300 M0 180 L 230 350"/>
+      <path d="M0 -300 L -240 -160 M0 -240 L -270 -100 M0 -180 L -285 -40 M0 -120 L -295 30 M0 -60 L -300 100 M0 0 L -300 170 M0 60 L -290 240 M0 120 L -270 300 M0 180 L -230 350"/>
     </g>
-    <text x="50%" y="520" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="'Noto Serif SC', serif" font-size="56.00000000000001" font-weight="500">LAMB SPECIALTY</text>
-    <text x="50%" y="624" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui, sans-serif" font-size="32">Lamb Shepherd</text>
-  </svg>
+  </g>
+
+  <g transform="translate(400, 580)">
+    <ellipse cx="0" cy="60" rx="180" ry="36" fill="#1a0f08"/>
+    <path d="M-180 60 Q -140 240 0 240 Q 140 240 180 60 Z" fill="#2c1810"/>
+    <ellipse cx="0" cy="60" rx="160" ry="28" fill="#0e0805"/>
+    <ellipse cx="-30" cy="48" rx="80" ry="14" fill="#3d2a1d" opacity="0.6"/>
+    <g transform="translate(50, -30) rotate(20)">
+      <rect x="-12" y="-110" width="24" height="200" fill="#2c1810" rx="8"/>
+      <ellipse cx="0" cy="90" rx="22" ry="14" fill="#1a0f08"/>
+      <rect x="-12" y="-130" width="24" height="30" fill="#3d2a1d" rx="6"/>
+    </g>
+    <g transform="translate(0, 30)">
+      <path d="M-90 0 q 90 -30 180 0 q -10 30 -90 30 q -80 0 -90 -30z" fill="#c64525"/>
+      <circle cx="-40" cy="6" r="6" fill="#a8311b"/>
+      <circle cx="20" cy="2" r="5" fill="#e6c068"/>
+      <circle cx="60" cy="14" r="4" fill="#1f4d3d"/>
+    </g>
+  </g>
+
+  <g transform="translate(160, 400) rotate(-18)">
+    <path d="M0 0 q 14 60 -8 110 q -4 8 -10 4 q 4 -50 -4 -100 q 6 -20 22 -14z" fill="#c64525"/>
+    <path d="M0 0 q 8 -8 22 -6 q -8 8 -22 6z" fill="#1f4d3d"/>
+  </g>
+  <g transform="translate(200, 380) rotate(8)">
+    <path d="M0 0 q 12 50 -6 96 q -4 6 -8 2 q 4 -42 -4 -86 q 4 -16 18 -12z" fill="#a8311b"/>
+    <path d="M0 0 q 8 -8 18 -4 q -6 8 -18 4z" fill="#1f4d3d"/>
+  </g>
+
+  <g transform="translate(620, 380)">
+    <circle cx="0" cy="0" r="60" fill="#3a6b2e"/>
+    <circle cx="0" cy="0" r="48" fill="#a8c764"/>
+    <g stroke="#3a6b2e" stroke-width="2" fill="none">
+      <line x1="0" y1="-40" x2="0" y2="40"/>
+      <line x1="-40" y1="0" x2="40" y2="0"/>
+      <line x1="-28" y1="-28" x2="28" y2="28"/>
+      <line x1="-28" y1="28" x2="28" y2="-28"/>
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#3a6b2e"/>
+  </g>
+  <g transform="translate(680, 460) scale(0.7)">
+    <circle cx="0" cy="0" r="60" fill="#3a6b2e"/>
+    <circle cx="0" cy="0" r="48" fill="#a8c764"/>
+    <g stroke="#3a6b2e" stroke-width="2" fill="none">
+      <line x1="0" y1="-40" x2="0" y2="40"/>
+      <line x1="-40" y1="0" x2="40" y2="0"/>
+    </g>
+  </g>
+
+  <g transform="translate(180, 720)" stroke="#3a6b2e" stroke-width="3" fill="none" opacity="0.9">
+    <path d="M0 0 C 30 -100, 60 -200, 40 -340"/>
+    <path d="M20 0 C 50 -100, 90 -200, 80 -340"/>
+    <path d="M40 0 C 80 -100, 120 -200, 130 -340"/>
+  </g>
+
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="url(#goldG)" stroke-width="3" rx="14"/>
+  <rect x="56" y="56" width="688" height="888" fill="none" stroke="#c79a3a" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 5" rx="10"/>
+
+  <g fill="#c79a3a" opacity="0.55">
+    <g transform="translate(72, 72)"><path d="M0 0 q 10 -14 24 0 q -12 14 -24 0z M0 0 q -10 14 -24 0 q 12 -14 24 0z"/></g>
+    <g transform="translate(728, 72)"><path d="M0 0 q 10 -14 24 0 q -12 14 -24 0z M0 0 q -10 14 -24 0 q 12 -14 24 0z"/></g>
+    <g transform="translate(72, 928)"><path d="M0 0 q 10 -14 24 0 q -12 14 -24 0z M0 0 q -10 14 -24 0 q 12 -14 24 0z"/></g>
+    <g transform="translate(728, 928)"><path d="M0 0 q 10 -14 24 0 q -12 14 -24 0z M0 0 q -10 14 -24 0 q 12 -14 24 0z"/></g>
+  </g>
+
+  <rect width="800" height="1000" filter="url(#grain2)" opacity="0.35"/>
+</svg>

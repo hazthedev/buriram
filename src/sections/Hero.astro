@@ -2,44 +2,81 @@
 import Button from '../components/Button.astro';
 ---
 
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<section class="hero-buriram relative min-h-screen flex items-center justify-center overflow-hidden">
   <!-- Background Image -->
   <div class="absolute inset-0 z-0">
     <img
       src="/images/hero-lamb-ribs.svg"
       alt="Roast lamb ribs sizzling on a grill"
       class="w-full h-full object-cover"
-      style="animation: heroSettle 1s ease-out forwards;"
+      style="animation: heroSettle 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;"
     />
-    <div class="absolute inset-0 bg-warm-sand/70"></div>
+    <!-- Banana-cream wash to keep copy legible -->
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse at 30% 70%, rgba(236,228,196,0.86) 0%, rgba(236,228,196,0.62) 50%, rgba(21,54,43,0.30) 100%);"></div>
   </div>
+
+  <!-- Floating temple silhouette parallax (left) -->
+  <svg class="absolute left-[-40px] bottom-[-20px] z-[1] w-[260px] sm:w-[340px] opacity-60 temple-drift" aria-hidden="true" viewBox="0 0 200 240" fill="#1f4d3d">
+    <path d="M20 230 L 180 230 L 188 240 L 12 240 Z"/>
+    <rect x="34" y="160" width="8" height="70"/>
+    <rect x="158" y="160" width="8" height="70"/>
+    <rect x="80" y="160" width="8" height="70"/>
+    <rect x="112" y="160" width="8" height="70"/>
+    <path d="M20 160 L 36 130 L 164 130 L 180 160 Z"/>
+    <path d="M20 160 q -10 -4 -14 -18 q 10 4 16 12 Z"/>
+    <path d="M180 160 q 10 -4 14 -18 q -10 4 -16 12 Z"/>
+    <path d="M40 130 L 56 100 L 144 100 L 160 130 Z"/>
+    <path d="M40 130 q -8 -4 -10 -14 q 8 2 14 8 Z"/>
+    <path d="M160 130 q 8 -4 10 -14 q -8 2 -14 8 Z"/>
+    <path d="M60 100 L 76 70 L 124 70 L 140 100 Z"/>
+    <path d="M100 70 L 94 50 L 100 26 L 106 50 Z"/>
+  </svg>
+
+  <!-- Lotus bloom (right) -->
+  <svg class="absolute right-[-30px] top-[18%] z-[1] w-[200px] sm:w-[280px] opacity-90 lotus-float" aria-hidden="true" viewBox="-100 -120 200 200">
+    <g class="lotus-bloom">
+      <path d="M0 0 q -22 -42 0 -82 q 22 42 0 82z" fill="#d97a8c"/>
+      <path d="M0 0 q -52 -22 -56 -76 q 46 14 56 76z" fill="#c64525" opacity="0.85"/>
+      <path d="M0 0 q 52 -22 56 -76 q -46 14 -56 76z" fill="#c64525" opacity="0.85"/>
+      <path d="M0 0 q -78 6 -90 -42 q 64 -10 90 42z" fill="#d97a8c" opacity="0.75"/>
+      <path d="M0 0 q 78 6 90 -42 q -64 -10 -90 42z" fill="#d97a8c" opacity="0.75"/>
+      <circle cx="0" cy="-12" r="8" fill="#e6c068" class="gold-shimmer"/>
+    </g>
+  </svg>
 
   <!-- Content -->
   <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
     <div class="max-w-3xl mx-auto space-y-8">
       <!-- Eyebrow -->
-      <p class="text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-xinjiang-red">
+      <p data-stagger class="text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-xinjiang-red">
         Desa Setapak <span class="mx-2">·</span> Chinese-Muslim <span class="mx-2">·</span> Halal <span class="mx-2">·</span> <span lang="zh" class="font-zh">中国穆斯林餐厅</span>
       </p>
 
       <!-- Headline -->
-      <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-charred-brown leading-[1.1]">
+      <h1 data-stagger class="font-display text-5xl sm:text-6xl lg:text-7xl font-semibold text-charred-brown leading-[1.05]">
         Xinjiang on a plate.
       </h1>
 
+      <!-- Gold-leaf flourish under headline -->
+      <div class="flex items-center justify-center gap-3 -mt-4" aria-hidden="true">
+        <span class="block h-px w-16 bg-gradient-to-r from-transparent to-cumin-gold"></span>
+        <svg width="20" height="20" viewBox="-12 -12 24 24" class="gold-shimmer"><path d="M0 -10 q 4 6 0 10 q -4 -4 0 -10z M-10 0 q 6 -4 10 0 q -4 4 -10 0z M10 0 q -6 -4 -10 0 q 4 4 10 0z M0 10 q -4 -6 0 -10 q 4 4 0 10z" fill="#c79a3a"/></svg>
+        <span class="block h-px w-16 bg-gradient-to-l from-transparent to-cumin-gold"></span>
+      </div>
+
       <!-- Subhead -->
-      <p class="text-lg sm:text-xl text-earth-brown max-w-xl mx-auto leading-relaxed">
+      <p data-stagger class="text-lg sm:text-xl text-earth-brown max-w-xl mx-auto leading-relaxed">
         Authentic Northern Chinese cuisine, halal always. Roast lamb ribs that fall apart, hand-pulled noodles, dumplings with chili oil that ruins all other chili oils for you. Hidden in Desa Setapak. Worth the drive.
       </p>
 
       <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+      <div data-stagger class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
         <Button href="/menu" variant="primary">See the Menu</Button>
         <Button href="/story#visit" variant="outline">Find Us</Button>
       </div>
 
       <!-- Handwritten note -->
-      <p class="font-accent text-2xl text-earth-brown/70 rotate-[-3deg] mt-8 inline-block">
+      <p data-stagger class="font-accent text-2xl text-earth-brown/70 rotate-[-3deg] mt-8 inline-block">
         since 2016
       </p>
     </div>
@@ -48,7 +85,45 @@ import Button from '../components/Button.astro';
 
 <style>
   @keyframes heroSettle {
-    from { transform: scale(1.03); }
-    to { transform: scale(1); }
+    from { transform: scale(1.06); filter: blur(3px); }
+    to { transform: scale(1); filter: blur(0); }
   }
+  .hero-buriram [data-stagger] {
+    opacity: 0;
+    transform: translateY(16px);
+    animation: staggerIn 900ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .hero-buriram [data-stagger]:nth-child(1) { animation-delay: 0.10s; }
+  .hero-buriram [data-stagger]:nth-child(2) { animation-delay: 0.25s; }
+  .hero-buriram [data-stagger]:nth-child(3) { animation-delay: 0.40s; }
+  .hero-buriram [data-stagger]:nth-child(4) { animation-delay: 0.55s; }
+  .hero-buriram [data-stagger]:nth-child(5) { animation-delay: 0.70s; }
+  .hero-buriram [data-stagger]:nth-child(6) { animation-delay: 0.85s; }
 </style>
+
+<script>
+  // Subtle parallax on scroll for the temple silhouette + IntersectionObserver reveal
+  const temples = document.querySelectorAll<SVGElement>('.temple-drift');
+  let raf = 0;
+  const onScroll = () => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      const y = window.scrollY;
+      temples.forEach((el) => {
+        el.style.transform = `translateY(${y * -0.12}px)`;
+      });
+    });
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Generic reveal-on-scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal-on-scroll').forEach((el) => io.observe(el));
+</script>

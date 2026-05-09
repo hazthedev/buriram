@@ -1,9 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-    <rect width="1200" height="800" fill="#2D1F18"/>
-    <rect x="96" y="64" width="1008" height="672" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" rx="8"/>
-    <g transform="translate(588, 372)">
-      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#2D1F18" font-family="serif" font-size="16" font-weight="bold">LS</text>
-    </g>
-    <text x="50%" y="520" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-family="'Noto Serif SC', serif" font-size="56.00000000000001" font-weight="500">LAMB SHEPHERD</text>
-    <text x="50%" y="624" dominant-baseline="middle" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-family="system-ui, sans-serif" font-size="32">Lamb Shepherd</text>
-  </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Buriram tropical Thai restaurant social card">
+  <defs>
+    <linearGradient id="ogBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#15362b"/>
+      <stop offset="100%" stop-color="#1f4d3d"/>
+    </linearGradient>
+    <linearGradient id="ogGold" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#e6c068"/>
+      <stop offset="100%" stop-color="#a47820"/>
+    </linearGradient>
+    <pattern id="ogLeaves" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#e6c068" stroke-opacity="0.08" stroke-width="1">
+        <path d="M30 180 C 70 130, 120 80, 180 30"/>
+        <path d="M50 180 L 180 50 M70 180 L 180 70 M90 180 L 180 90 M110 180 L 180 110"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#ogBg)"/>
+  <rect width="1200" height="630" fill="url(#ogLeaves)"/>
+
+  <!-- gold frame -->
+  <rect x="40" y="40" width="1120" height="550" fill="none" stroke="url(#ogGold)" stroke-width="2" rx="6"/>
+  <rect x="56" y="56" width="1088" height="518" fill="none" stroke="#c79a3a" stroke-opacity="0.4" stroke-width="1" stroke-dasharray="3 5" rx="3"/>
+
+  <!-- temple silhouette -->
+  <g transform="translate(900, 280)" fill="url(#ogGold)" opacity="0.85">
+    <path d="M-100 200 L 100 200 L 110 230 L -110 230 Z"/>
+    <rect x="-80" y="100" width="10" height="100" fill="#c79a3a"/>
+    <rect x="70" y="100" width="10" height="100" fill="#c79a3a"/>
+    <rect x="-30" y="100" width="10" height="100" fill="#c79a3a"/>
+    <rect x="20" y="100" width="10" height="100" fill="#c79a3a"/>
+    <path d="M-100 100 L -85 70 L 85 70 L 100 100 Z"/>
+    <path d="M-100 100 q -12 -6 -16 -22 q 10 4 18 14 Z"/>
+    <path d="M100 100 q 12 -6 16 -22 q -10 4 -18 14 Z"/>
+    <path d="M-80 70 L -65 40 L 65 40 L 80 70 Z"/>
+    <path d="M-60 40 L -40 10 L 40 10 L 60 40 Z"/>
+    <path d="M0 10 L -6 -16 L 0 -36 L 6 -16 Z"/>
+  </g>
+
+  <!-- lotus -->
+  <g transform="translate(180, 420)" opacity="0.7">
+    <path d="M0 0 q -22 -42 0 -82 q 22 42 0 82z" fill="#d97a8c"/>
+    <path d="M0 0 q -52 -22 -56 -76 q 46 14 56 76z" fill="#c64525"/>
+    <path d="M0 0 q 52 -22 56 -76 q -46 14 -56 76z" fill="#c64525"/>
+    <circle cx="0" cy="-12" r="8" fill="#e6c068"/>
+  </g>
+
+  <!-- text -->
+  <g transform="translate(96, 200)" fill="#ece4c4">
+    <text font-family="'Playfair Display', Georgia, serif" font-size="92" font-weight="700">Buriram</text>
+    <text y="56" font-family="'Charm', serif" font-size="34" fill="#e6c068">เมืองบุรีรัมย์</text>
+    <text y="120" font-family="'Lora', Georgia, serif" font-size="24" fill="#ece4c4" opacity="0.85">Northeastern Thai cooking, served in the jungle.</text>
+    <text y="170" font-family="'Lora', Georgia, serif" font-size="20" fill="#c79a3a" letter-spacing="6">DESA SETAPAK · KUALA LUMPUR</text>
+  </g>
+</svg>
